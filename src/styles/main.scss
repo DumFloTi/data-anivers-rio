@@ -1,3 +1,35 @@
-body {
-    background-color: red;
+@use 'hero';
+@use 'variables';
+@use 'event';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Madimi One, sans-serif;
+    color: variables.$textColor;
+    list-style: none;
+}
+
+#celeb {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120%;
+    opacity: 0.5;
+}
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+
+    @media (max-width: 640px) {
+        max-width: 80%;
+    }
+
+    @media (max-width: 1024px) {
+        max-width: 90%;        
+    }
 }

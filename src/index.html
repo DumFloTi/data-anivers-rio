@@ -3,9 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Aniversario</title>
+    <link rel="icon" href="./images/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
-    
+    <img id="celeb" src="./video/confeti.gif" alt="Confeti" style="display: none;">
+    <header class="hero">
+        <div class="container">
+            <p class="hero__text">
+                Escolha o dia do seu Aniversario!!
+            </p>
+            <input type="date" id="hero__date" />
+            <p class="hero__text">
+                O maior evento da vida dos seus pais começa em <br><span id="contador"></span>
+            </p>
+        </div>
+    </header>
+    <section class="aniversario aniversario--feliz">
+        <div class="container" data-aos="zoom-in-right">
+            <div class="aniversario__details">
+                <h2 class="aniversario__details__title">Vai ser um dia Feliz!</h2>
+                <p class="aniversario__details__description">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio placeat dolorem magni dolor officiis. Ex optio blanditiis animi ipsam repellendus pariatur! Voluptatem omnis inventore dolor voluptate necessitatibus, ratione mollitia at?
+                </p>
+            </div>
+            <img class="aniversario__image" src="./images/1.jpeg" alt="Homem feliz">
+        </div>
+    </section>
+    <section class="aniversario aniversario--todos aniversario--image-left">
+        <div class="container" data-aos="zoom-in-left">
+            <div class="aniversario__details">
+                <h2 class="aniversario__details__title">Vamos estar lá todos!</h2>
+                <p class="aniversario__details__description">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio placeat dolorem magni dolor officiis. Ex optio blanditiis animi ipsam repellendus pariatur! Voluptatem omnis inventore dolor voluptate necessitatibus, ratione mollitia at?
+                </p>
+            </div>
+            <img class="aniversario__image" src="./images/2.jpeg" alt="Casal">
+        </div>
+    </section>
+    <section class="aniversario aniversario--desconhecido">
+        <div class="container" data-aos="zoom-in-right">
+            <div class="aniversario__details">
+                <h2 class="aniversario__details__title">Até o desconhecido...</h2>
+                <p class="aniversario__details__description">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio placeat dolorem magni dolor officiis. Ex optio blanditiis animi ipsam repellendus pariatur! Voluptatem omnis inventore dolor voluptate necessitatibus, ratione mollitia at?
+                </p>
+            </div>
+            <img class="aniversario__image" src="./images/3.jpeg" alt="Homem Escondido">
+        </div>
+    </section>
+    <section class="aniversario aniversario--veremos aniversario--image-left">
+        <div class="container" data-aos="zoom-in-left">
+            <div class="aniversario__details">
+                <h2 class="aniversario__details__title">Nos veremos lá!</h2>
+                <p class="aniversario__details__description">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio placeat dolorem magni dolor officiis. Ex optio blanditiis animi ipsam repellendus pariatur! Voluptatem omnis inventore dolor voluptate necessitatibus, ratione mollitia at?
+                </p>
+            </div>
+            <img class="aniversario__image" src="./images/4.jpeg" alt="Homem embriagado">
+        </div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="scripts/main.js"></script>
 </body>
 </html>
